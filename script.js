@@ -30,3 +30,9 @@ overlay.addEventListener( 'click',closeModal );
 //     modal.classList.add('hidden');
 //     overlay.classList.add('hidden');
 // });
+
+document.addEventListener('keydown', function(e) {
+    if ( e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+    }
+})
